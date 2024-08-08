@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rotate Array</title>
+</head>
+<body>
+  <script>
+   const arr = [1, 2, 3, 4, 5];
+const k = 2;
+
+(() => {
+  for (let i = 0; i < k; i++) {
+    arr.unshift(arr.pop());
+  }
+  console.log(arr); 
+  document.write(arr.join("<br>"));
+})();
+
+  </script>
+</body>
+</html>

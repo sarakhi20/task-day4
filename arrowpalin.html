@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Array Programs</title>
+</head>
+<body>
+  <script>
+    const arr = ["madam", "hello", "radar", "javascript"];
+const palindromes = arr.filter(str => {
+  const reversedStr = str.split("").reverse().join("");
+  return str === reversedStr;
+});
+console.log(palindromes); // Output: ["madam", "radar"]
+document.write(palindromes.join("<br>"));
+
+  </script>
+</body>
+</html>

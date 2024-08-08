@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>String Array to Title Case</title>
+</head>
+<body>
+  <script>
+    const stringArray = ["hello", "world", "javascript", "visual studio"];
+    
+    const titleCasedArray = stringArray.map(string => {
+      return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
+    });
+    
+    console.log(titleCasedArray);
+    document.write(titleCasedArray.join("<br>"));
+  </script>
+</body>
+</html>
